@@ -1,0 +1,20 @@
+.sidebar {
+    width: 200px;
+    background-color: #f4f4f4;
+    height: 100vh;
+    padding: 1rem;
+    position: fixed;
+  }
+  .sidebar-menu {
+    list-style: none;
+    padding: 0;
+  }
+  .sidebar-menu li {
+    margin-bottom: 1rem;
+  }
+  .sidebar-menu a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
