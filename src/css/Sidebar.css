@@ -1,0 +1,69 @@
+/* Base styles for sidebar */
+.sidebar {
+  width: 200px;
+  background-color: #f4f4f4;
+  height: 100vh;
+  padding: 1rem;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  flex-grow: 1; /* Allow menu to take available space */
+}
+
+.sidebar-menu li {
+  margin-bottom: 1rem;
+}
+
+.sidebar-menu a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 0.5rem;
+    display: none; /* Initially hidden */
+  }
+
+  .sidebar-menu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidebar-menu li {
+    margin-bottom: 0.5rem;
+  }
+
+  .sidebar-menu a {
+    font-size: 0.875rem;
+  }
+
+  .sidebar-toggle {
+    display: block; /* Show toggle button on mobile */
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0.5rem;
+    background-color: #f4f4f4;
+    cursor: pointer;
+  }
+
+  .sidebar-open {
+    display: flex; /* Show sidebar when open */
+  }
+}
+
+/* Styles for toggle button */
+.sidebar-toggle {
+  display: none; /* Hidden by default */
+}

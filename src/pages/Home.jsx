@@ -6,7 +6,7 @@ const HomePage = () => {
   const { t } = useTranslation('home');
   return (
     <div className="container mx-auto mt-4">
-      <h2 className="text-3xl font-bold">{t('welcome')}</h2>
+      <h2 className="text-3xl font-bold">{t('home:welcome')}</h2>
       <p>Your dream home awaits.</p>
     </div>
   );

@@ -12,7 +12,7 @@ import './App.css';
 
 const App = () => {
   return (
-    <Router>
+    <Router >
       <div id="app">
         <Navbar />
        
